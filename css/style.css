@@ -617,6 +617,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid #f82249;
 }
 
+#intro .reg_btn {
+  background: #f82249;
+}
+
+#intro .reg_btn:hover {
+  background: transparent !important;
+  border: 2px solid #f82249;
+}
+
+
 #intro .about-btn:hover {
   background: #f82249;
   color: #fff;
@@ -1536,6 +1546,29 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
   color: #ddd;
 }
+
+#abstract {
+  margin-top: 3rem;
+}
+#abstract button {
+  background: #f82249 !important;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+}
+
+#abstract button:hover{
+  background: transparent !important;
+  border: 2px solid #f82249;
+}
+
+#abstract button:hover a{
+  color: #f82249 !important;
+}
+
+#abstract button a{
+  color: white !important;
+}
+
 
 /*--------------------------------------------------------------
 # Responsive Media Queries
