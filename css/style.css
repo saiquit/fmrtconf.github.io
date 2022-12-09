@@ -189,6 +189,24 @@ h6 {
   max-height: 40px;
 }
 
+
+
+/* LOGO */
+/* Logo-6 */
+.logo-6 h3 {
+  color: #f8234a;
+  font-weight: 300;
+  font-size: 30px;
+  line-height:1.3;
+}
+.logo-6 h3 span {
+  background: #f8234a;
+  color: #fff;
+  display: inline-block;
+  line-height: 1.8;
+  padding: 0 16px;
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -317,7 +335,15 @@ h6 {
 .nav-menu li.buy-tickets a:hover {
   background: none;
 }
-
+@media (max-width: 768px) {
+  #mobile-nav ul li.buy-tickets {
+    background-color: #f82249;
+    margin: 2px 0;
+  }
+  #mobile-nav ul li.buy-tickets:hover a{
+    color: white;
+  }
+}
 .nav-menu li.buy-tickets:hover a:before,
 .nav-menu li.buy-tickets.menu-active a:before {
   visibility: hidden;
@@ -1561,14 +1587,118 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid #f82249;
 }
 
-#abstract button:hover a{
+#abstract button:hover span{
   color: #f82249 !important;
 }
 
-#abstract button a{
+#abstract button span{
   color: white !important;
 }
 
+#abstract h5{
+  font-weight: bold;
+}
+#abstract h5 a:hover{
+  text-decoration: underline;
+}
+.stepper .lead {
+  font-size: 1.1rem;
+}
+
+.head_number{
+  font-size: 4rem;
+}
+
+.call_to_action{
+  text-align: center;
+}
+.deadline_text{
+  font-size: 2rem;
+}
+.deadline_text span{
+  color: #f82249;
+}
+
+.circle {
+  position: relative;
+  display: block;
+  margin: 2em 0;
+  background-color: transparent;
+  color: #222;
+  text-align: center;
+}
+
+.circle:after {
+  display: block;
+  padding-bottom: 100%;
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #ddd;
+  content: "";
+}
+
+.circle__inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circle__wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.circle__content {
+  display: table-cell;
+  padding: 1em;
+  vertical-align: middle;
+}
+
+.sponsor-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 3.5rem;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+@media (max-width: 767px) {
+  .sponsor-grid {
+    gap: 1.5rem;
+    max-width: 480px;
+  }
+}
+
+li p {
+  margin-top: 1rem;
+  font-family: system-ui;
+  text-align: center;
+}
+
+.sponsor img {
+  aspect-ratio: 1/1;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+@media (min-width: 480px) {
+  .circle__content {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .circle__content {
+    font-size: 4em;
+  }
+}
 
 /*--------------------------------------------------------------
 # Responsive Media Queries
@@ -1667,6 +1797,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #faq #faq-list i {
     top: 13px;
+  }
+  .head_number{
+    font-size: 2rem;
   }
 }
 
