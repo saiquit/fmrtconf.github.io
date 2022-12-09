@@ -8,7 +8,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
+:root {
+  --primary:  #01b0ef;
+  --secondary: #f0832d;
+}
 body {
   background: #fff;
   color: #2f3138;
@@ -23,7 +26,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #f8234a;
+  color: var(--primary);
   outline: none;
   text-decoration: none;
 }
@@ -75,7 +78,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #01b0ef;
+  background: var(--primary);
   color: #fff;
   width: 40px;
   height: 40px;
@@ -92,13 +95,13 @@ h6 {
 }
 
 .back-to-top:focus {
-  background: #f0832d;
+  background: var(--secondary);
   color: #fff;
   outline: none;
 }
 
 .back-to-top:hover {
-  background: #f0832d;
+  background: var(--secondary);
   color: #fff;
 }
 
@@ -117,7 +120,7 @@ h6 {
   display: block;
   width: 60px;
   height: 5px;
-  background: #01b0ef;
+  background: var(--primary);
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -178,7 +181,7 @@ h6 {
 }
 
 #header #logo h1 span {
-  color: #01b0ef;
+  color: var(--primary);
 }
 
 #header #logo h1 a,
@@ -197,13 +200,13 @@ h6 {
 /* LOGO */
 /* Logo-6 */
 .logo-6 h3 {
-  color: #01b0ef;
+  color: var(--primary);
   font-weight: 300;
   font-size: 30px;
   line-height:1.3;
 }
 .logo-6 h3 span {
-  background: #01b0ef;
+  background: var(--primary);
   color: #fff;
   display: inline-block;
   line-height: 1.8;
@@ -309,7 +312,7 @@ h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #01b0ef;
+  background-color: var(--primary);
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -323,10 +326,10 @@ h6 {
 
 .nav-menu li.buy-tickets a {
   color: #fff;
-  background: #01b0ef;
+  background: var(--primary);
   padding: 7px 22px;
   border-radius: 50px;
-  border: 2px solid #01b0ef;
+  border: 2px solid var(--primary);
   transition: all ease-in-out 0.3s;
   font-weight: 500;
   margin-left: 8px;
@@ -340,7 +343,7 @@ h6 {
 }
 @media (max-width: 768px) {
   #mobile-nav ul li.buy-tickets {
-    background-color: #01b0ef;
+    background-color: var(--primary);
     margin: 2px 0;
   }
   #mobile-nav ul li.buy-tickets:hover a{
@@ -375,7 +378,7 @@ h6 {
 }
 
 .nav-menu ul li:hover > a {
-  background: #01b0ef;
+  background: var(--primary);
   color: #fff;
 }
 
@@ -442,7 +445,7 @@ h6 {
 }
 
 #mobile-nav ul li a:hover {
-  color: #01b0ef;
+  color: var(--primary);
 }
 
 #mobile-nav ul li li {
@@ -459,11 +462,11 @@ h6 {
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #01b0ef;
+  color: var(--primary);
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #01b0ef;
+  color: var(--primary);
 }
 
 #mobile-body-overly {
@@ -546,7 +549,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro h1 span {
-  color: #01b0ef;
+  color: var(--primary);
 }
 
 #intro p {
@@ -558,7 +561,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#01b0ef 50%, rgba(101, 111, 150, 0.15) 52%);
+  background: radial-gradient(var(--primary) 50%, rgba(101, 111, 150, 0.15) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -605,7 +608,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn:hover::after {
-  border-left: 15px solid #01b0ef;
+  border-left: 15px solid var(--primary);
   -webkit-transform: scale(20);
   transform: scale(20);
 }
@@ -643,21 +646,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #01b0ef;
+  border: 2px solid var(--primary);
 }
 
 #intro .reg_btn {
-  background: #01b0ef;
+  background: var(--primary);
 }
 
 #intro .reg_btn:hover {
   background: transparent !important;
-  border: 2px solid #01b0ef;
+  border: 2px solid var(--primary);
 }
 
 
 #intro .about-btn:hover {
-  background: #01b0ef;
+  background: var(--primary);
   color: #fff;
 }
 
@@ -781,7 +784,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #speakers .speaker .details a:hover {
-  color: #01b0ef;
+  color: var(--primary);
 }
 
 #speakers .speaker:hover .details {
@@ -816,7 +819,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #speakers-details .details .social a:hover {
-  background: #01b0ef;
+  background: var(--primary);
   color: #fff;
 }
 
@@ -861,7 +864,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #01b0ef;
+  background-color: var(--primary);
   color: #fff;
 }
 
@@ -1034,7 +1037,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #hotels a:hover {
-  color: #01b0ef;
+  color: var(--primary);
 }
 
 #hotels .stars {
@@ -1084,7 +1087,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #gallery .owl-dot.active {
-  background-color: #01b0ef;
+  background-color: var(--primary);
 }
 
 #gallery .gallery-carousel .owl-stage-outer {
@@ -1092,7 +1095,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #gallery .gallery-carousel .center {
-  border: 6px solid #01b0ef;
+  border: 6px solid var(--primary);
   margin: -10px;
   box-sizing: content-box;
   padding: 4px;
@@ -1181,7 +1184,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #faq #faq-list a.collapse {
-  color: #01b0ef;
+  color: var(--primary);
 }
 
 #faq #faq-list a.collapsed {
@@ -1234,7 +1237,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 0;
   padding: 9px 25px;
   cursor: pointer;
-  background: #01b0ef;
+  background: var(--primary);
   color: #fff;
   transition: all 0.3s ease;
   outline: none;
@@ -1243,7 +1246,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #subscribe button:hover {
-  background: #f0832d;
+  background: var(--secondary);
 }
 
 /*--------------------------------------------------------------
@@ -1294,13 +1297,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #01b0ef;
+  background-color: var(--primary);
   border: 0;
   color: #fff;
 }
 
 #buy-tickets .card .btn:hover {
-  background-color: #f0832d;
+  background-color: var(--secondary);
 }
 
 #buy-tickets #buy-ticket-modal input,
@@ -1313,13 +1316,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #01b0ef;
+  background-color: var(--primary);
   border: 0;
   color: #fff;
 }
 
 #buy-tickets #buy-ticket-modal .btn:hover {
-  background-color: #f0832d;
+  background-color: var(--secondary);
 }
 
 /*--------------------------------------------------------------
@@ -1339,7 +1342,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #01b0ef;
+  color: var(--primary);
 }
 
 #contact .contact-info address,
@@ -1361,7 +1364,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .contact-info a:hover {
-  color: #01b0ef;
+  color: var(--primary);
 }
 
 #contact .contact-address,
@@ -1371,8 +1374,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form #sendmessage {
-  color: #01b0ef;
-  border: 1px solid #01b0ef;
+  color: var(--primary);
+  border: 1px solid var(--primary);
   display: none;
   text-align: center;
   padding: 15px;
@@ -1413,7 +1416,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-  background: #01b0ef;
+  background: var(--primary);
   border: 0;
   padding: 10px 40px;
   color: #fff;
@@ -1423,7 +1426,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"]:hover {
-  background: #f0832d;
+  background: var(--secondary);
 }
 
 /*--------------------------------------------------------------
@@ -1485,7 +1488,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #01b0ef;
+  background: var(--primary);
   color: #fff;
 }
 
@@ -1496,7 +1499,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
-  border-bottom: 2px solid #01b0ef;
+  border-bottom: 2px solid var(--primary);
 }
 
 #footer .footer-top .footer-links {
@@ -1511,7 +1514,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 5px;
-  color: #01b0ef;
+  color: var(--primary);
   font-size: 18px;
 }
 
@@ -1529,7 +1532,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #01b0ef;
+  color: var(--primary);
 }
 
 #footer .footer-top .footer-contact {
@@ -1551,7 +1554,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-newsletter input[type="submit"] {
-  background: #01b0ef;
+  background: var(--primary);
   border: 0;
   width: 35%;
   padding: 6px 0;
@@ -1562,7 +1565,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-newsletter input[type="submit"]:hover {
-  background: #f0832d;
+  background: var(--secondary);
 }
 
 #footer .copyright {
@@ -1580,18 +1583,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-top: 3rem;
 }
 #abstract button {
-  background: #01b0ef !important;
+  background: var(--primary) !important;
   border-radius: 2rem;
   padding: 0.5rem 2rem;
 }
 
 #abstract button:hover{
   background: transparent !important;
-  border: 2px solid #01b0ef;
+  border: 2px solid var(--primary);
 }
 
 #abstract button:hover span{
-  color: #01b0ef !important;
+  color: var(--primary) !important;
 }
 
 #abstract button span{
@@ -1619,7 +1622,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 2rem;
 }
 .deadline_text span{
-  color: #01b0ef;
+  color: var(--primary);
 }
 
 .circle {
