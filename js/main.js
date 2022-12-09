@@ -1,5 +1,9 @@
 jQuery(document).ready(function( $ ) {
 
+  //loader
+
+  $('#preloader').fadeOut(1000)
+
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {

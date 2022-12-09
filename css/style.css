@@ -65,6 +65,9 @@ h6 {
   height: 100%;
   overflow: visible;
   background: #fff url("../img/preloader.svg") no-repeat center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Back to top button */
