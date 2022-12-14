@@ -1767,6 +1767,16 @@ tabs
   align-items: center;
   justify-content: center;
 }
+#registration {
+  padding-bottom: 2rem;
+}
+#registration .custom_btn {
+  background-color: var(--primary);
+  margin: 0 auto;
+}
+#registration .custom_btn a {
+  color: white !important;
+}
 
 @media (max-width: 767px) {
   .sponsor-grid {
