@@ -1767,17 +1767,20 @@ tabs
   max-width: 980px;
 }
 .intro_spon {
-  max-width: 600px;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  max-width: 400px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   gap: 1rem;
 }
 .main_spon {
-  position: absolute;
-  bottom: 0.5rem;
+  /* position: absolute; */
+  /* bottom: 0.5rem; */
+  /* right: 0.5rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  align-self: flex-end;
+  margin-right: 0.5rem;
 }
 #registration {
   padding-bottom: 2rem;
