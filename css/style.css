@@ -1765,8 +1765,8 @@ tabs
   gap: 3.5rem;
   margin: 0 auto;
   max-width: 980px;
-  background: rgb(255, 255, 255);
-  padding: 0.5rem 0rem;
+  /* background: rgb(255, 255, 255); */
+  /* padding: 0.5rem 0rem; */
 }
 .intro_spon {
   max-width: 400px;
@@ -1774,16 +1774,11 @@ tabs
   gap: 0.5rem;
 }
 .main_spon {
-  /* position: absolute; */
-  /* bottom: 0.5rem; */
-  /* right: 0.5rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-self: flex-end;
-  position: absolute;
-  bottom: 0;
+  align-self: center;
 }
 #registration {
   padding-bottom: 2rem;
