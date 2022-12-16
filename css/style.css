@@ -851,6 +851,15 @@ tabs
   font-weight: 600;
   margin-bottom: 5px;
 }
+#speakers .speaker img {
+  height: 400px;
+  width: 100%;
+}
+
+.card img {
+  height: 400px;
+  width: 100%;
+}
 
 #speakers .speaker .details p {
   color: #fff;
@@ -1758,14 +1767,13 @@ tabs
   max-width: 980px;
 }
 .intro_spon {
-  max-width: 400px;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  max-width: 600px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 1rem;
 }
 .main_spon {
   position: absolute;
   bottom: 0.5rem;
-  right: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
