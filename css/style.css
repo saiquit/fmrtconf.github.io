@@ -1725,6 +1725,25 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: white !important;
 }
 
+.committee_mem {
+  display: flex;
+  padding: 1.5rem 0;
+}
+.committee_mem img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin-right: 2rem;
+}
+.committee_mem > div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+}
+.committee_mem > div h4 {
+  line-height: 0;
+}
+
 @media (max-width: 767px) {
   .sponsor-grid {
     gap: 1.5rem;

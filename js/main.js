@@ -162,9 +162,4 @@ jQuery(document).ready(function ($) {
   });
 
   // custom code
-
-  $("body").click(function (e) {
-    e.preventDefault();
-    console.log($(this).parentsUntil("a").attr("id"));
-  });
 });
