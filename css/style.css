@@ -1701,14 +1701,27 @@ body.mobile-nav-active #mobile-nav-toggle {
     width: 15rem;
   }
 }
+.poster_method li {
+  list-style-type: disc;
+}
 #registration {
   padding-bottom: 2rem;
 }
 #registration .custom_btn {
-  background-color: var(--primary);
   margin: 0 auto;
+  padding: 0.5rem 2rem;
+  font-size: 1.25rem;
+  border-radius: 2rem;
+  background: none;
+  border: 2px solid var(--primary);
 }
 #registration .custom_btn a {
+  color: var(--primary) !important;
+}
+#registration .custom_btn:hover {
+  background: var(--primary);
+}
+#registration .custom_btn:hover a {
   color: white !important;
 }
 
