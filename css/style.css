@@ -1743,6 +1743,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 .committee_mem > div h4 {
   line-height: 0;
 }
+@media (max-width: 999px) {
+  .committee_mem > div h4 {
+    line-height: normal;
+  }
+}
 
 @media (max-width: 767px) {
   .sponsor-grid {
@@ -1910,4 +1915,33 @@ li p {
   #subscribe button {
     margin-top: 10px;
   }
+}
+
+#outcome {
+  width: 100%;
+  /* background: url(../img/intro-bg-2.jpg) top center; */
+  background: rgba(1, 175, 239, 0.178);
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  padding: 5rem 0;
+}
+
+#outcome h2 {
+  color: white;
+}
+
+#outcome p,
+#outcome li {
+  color: white !important;
+}
+
+#outcome:before {
+  content: "";
+  background: rgba(24, 28, 36, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
